@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+
+{% block title %}Add News{% endblock %}
+    <h2>Yangi Yangilik Qo'shish</h2>
+    <form class="news-form">
+        <div class="form-group">
+                <label for="title">Sarlavha:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Kategoriya:</label>
+                <select id="category" name="category" required>
+                    <option value="">Tanlang</option>
+                    <option value="mahalliy">Mahalliy</option>
+                    <option value="jahon">Jahon</option>
+                    <option value="sport">Sport</option>
+                    <option value="texnologiya">Texnologiya</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="short-description">Qisqa tavsif:</label>
+                <textarea id="short-description" name="short-description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="full-content">To'liq matn:</label>
+                <textarea id="full-content" name="full-content" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Yangilik qo'shish</button>
+    </form>
+
+{% endblock %}
